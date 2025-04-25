@@ -6,6 +6,15 @@
 
   /* Shared styles */
 
+  .btn-primary {
+    background-color: black;
+    color: white;
+    padding: 10px 47px;
+    max-width: 197px;
+    max-height: 50px;
+    border-radius: 12px;
+  }
+
   .display-flex {
     display: flex;
   }
@@ -31,6 +40,10 @@
   .nav {
     align-items: center;
     justify-content: space-between;
+  }
+
+  .nav-main {
+    align-items: center;
   }
 
   .nav-items {
@@ -67,6 +80,10 @@
     font-weight: 400;
   }
 
+  .nav-logo {
+    max-height: 62px;
+  }
+
   .nav-btn {
     background-color: orange;
     border: none;
@@ -89,9 +106,37 @@
     display: none;
   }
 
+  /* Banner styles */
+
+  .banner {
+    align-items: center;
+    gap: 50px;
+  }
+
+  .banner-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+  .banner-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .banner-blue {
+    color: rgba(1, 172, 253, 1);
+  }
+
+  .banner-orange {
+    color: rgba(254, 163, 1, 1);
+  }
+
   /* Media Query */
 
   @media screen and (max-width: 576px) {
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
     .nav-title, .nav-items, .nav-btn {
         display: none;
     }
